@@ -4,7 +4,12 @@ const AppleBasket = ({ count, basketName }) => {
       <h1>
         <span>{count}</span> apples
       </h1>
-      <p>{basketName}</p>
+      <p>
+        {basketName}
+        {count === 10 && '(Full)'}
+        {console.log(count)}
+        {count === 0 && '(Empty)'}
+      </p>
     </div>
   );
 };
